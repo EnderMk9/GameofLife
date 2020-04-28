@@ -6,7 +6,7 @@ pg.font.init()          # Initialize font module from pygame
 
 width = 1000; height = 1000                 # Establish width and height of the grid
 bg = (35, 35, 35)                           # Establish background color of window
-border = 1; color = (int(width/8), int(width/8), int(width/8))         # Establish color and border size of cells
+border = 1; color = (150, 150, 150)         # Establish color and border size of cells
 celX = 75; celY = 75                        # Establish number of cell in each dimension
 celw = width / celX; celh = width / celY    # Establish the width and height of a cell depending on the size of the window and the number of cells
 pause = 1                                   # Establish the boolean variable pause, which is used to determine whether the game is paused or not
