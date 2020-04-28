@@ -20,5 +20,5 @@ Controls:
 ![alt text](https://github.com/EnderMk9/GameofLife/raw/master/gol3.webp "Game of Life")
 Carbon visualization
 ![alt text](https://github.com/EnderMk9/GameofLife/raw/master/gameoflife.svg "Game of Life")
-Lite version carbon visualozation
+Lite version carbon visualization
 ![alt text](https://github.com/EnderMk9/GameofLife/raw/master/gameoflifelite.svg "Game of Life lite")
