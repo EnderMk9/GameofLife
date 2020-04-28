@@ -54,10 +54,10 @@ while 1:                                                                        
         if event.type == pg.KEYDOWN and event.key == pg.K_s:                        # If S key is pressed:
             celY -= 1; celh = width / celY                                          # Number of cells in Y decreases and we recalcule the height of cells
             gameState = np.zeros((celX,celY)); i = 0; pause = 1                     # Resets the game
-        if pg.mouse.get_pressed()[0] == 1:                                          # If pressing the left button of the mouse, which is stored in a tuple of 3 coordinates, position 0:
+        if pg.mouse.get_pressed()[0] == 1 and not pg.mouse.get_pos()[0] > width + border: # If pressing the left button of the mouse, which is stored in a tuple of 3 coordinates, position 0:
             cursor = pg.mouse.get_pos()                                             # Get the coordinates of the cursor
             gameState[int(cursor[0]/celw),int(cursor[1]/celh)] = 1                  # Change to 1 (alive) the state of the cell in those coordinates, for that, we divide the coordinates between the size of a cell and then take the integer part
-        if pg.mouse.get_pressed()[2] == 1:                                          # If pressing the right button of the mouse, which is stored in a tuple of 3 coordinates, position 2:
+        if pg.mouse.get_pressed()[2] == 1 and not pg.mouse.get_pos()[0] > width + border: # If pressing the right button of the mouse, which is stored in a tuple of 3 coordinates, position 2:
             cursor = pg.mouse.get_pos()                                             # Get the coordinates of the cursor
             gameState[int(cursor[0]/celw),int(cursor[1]/celh)]  = 0                 # Change to 0 (dead) the state of the cell in those coordinates, for that, we divide the coordinates between the size of a cell and then take the integer part
     if kill: break                                                                  # If kill is TRUE, the while loop breaks and the program ends
