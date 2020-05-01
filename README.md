@@ -14,11 +14,8 @@ Controls:
 - Q/W - Increase X/Y of grid
 - A/S - Decrease X/Y of grid
 - BACKSPACE - Reset
+- F - Fill
 - ESC - End Game
 
 
-![alt text](https://github.com/EnderMk9/GameofLife/raw/master/gol3.webp "Game of Life")
-Carbon visualization
-![alt text](https://github.com/EnderMk9/GameofLife/raw/master/gameoflife.svg "Game of Life")
-Lite version carbon visualization
-![alt text](https://github.com/EnderMk9/GameofLife/raw/master/gameoflifelite.svg "Game of Life lite")
+![alt text](https://github.com/EnderMk9/GameofLife/raw/master/anim.webp "Game of Life")
